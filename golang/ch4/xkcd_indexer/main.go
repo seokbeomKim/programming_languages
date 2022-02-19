@@ -32,7 +32,6 @@ func main() {
 		fmt.Fprintf(os.Stderr, "Failed to search keyword")
 		os.Exit(1)
 	}
-
 	for _, item := range items {
 		fmt.Println((*item).Img)
 		fmt.Println((*item).Transcript)
