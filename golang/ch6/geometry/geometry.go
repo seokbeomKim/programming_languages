@@ -1,4 +1,4 @@
-package main
+package geometry
 
 import (
 	"fmt"
@@ -27,6 +27,11 @@ func Distance(p, q Point) float64 {
 // 동일한 역할을 수행하는 Point 타입의 메서드
 func (p Point) Distance(q Point) float64 {
 	return math.Hypot(q.X-p.X, q.Y-p.Y)
+}
+
+func (p *Point) ScaleBy(factor float64) {
+	p.X *= factor
+	p.Y *= factor
 }
 
 // 추가 파라미터 p를 메서드의 수신자라 부르는데, 이것은 초기 객체지향 언어에서

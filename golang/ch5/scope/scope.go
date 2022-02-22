@@ -17,7 +17,7 @@ func main() {
 		f()
 
 		fs = append(fs, func() {
-			dir = append(dir, dir[-1])
+			dir = append(dir, i+total)
 		})
 	}
 	fmt.Println(dir)
