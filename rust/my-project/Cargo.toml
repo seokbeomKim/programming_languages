@@ -1,0 +1,12 @@
+[package]
+name = "my-project"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+# Cargo.toml 에는 src/main.rs 에 대한 언급이 없다. 이러한 내용이 없어도
+# 기본적으로 src/main.rs 를 crate root로 사용한다.
+#
